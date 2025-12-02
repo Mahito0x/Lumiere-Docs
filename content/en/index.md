@@ -1,123 +1,138 @@
 ---
 seo:
-  title: Write beautiful docs with Markdown
-  description: Ship fast, flexible, and SEO-optimized documentation with beautiful
-    design out of the box. Docus brings together the best of the Nuxt ecosystem.
-    Powered by Nuxt UI.
+  title: Lumière - All-in-One Discord Bot
+  description: The ultimate Discord bot for robust moderation, seamless automation, and highly engaging features.
 ---
 
 ::u-page-hero
 #title
-Write beautiful docs with Markdown
+Why Settle for "Functional" When You Can Have Exceptional?
 
 #description
-Ship fast, flexible, and SEO-optimized documentation with beautiful design out of the box.
-
-Docus brings the best of the Nuxt ecosystem into one CLI.
+Most bots check boxes. Lumière transforms how your server operates. Setup takes minutes. The impact lasts forever.
 
 #links
   :::u-button
   ---
-  color: neutral
+  color: primary
   size: xl
-  to: /en/getting-started/installation
-  trailing-icon: i-lucide-arrow-right
+  icon: i-lucide-plus-circle
+  to: https://discord.com/oauth2/authorize?client_id=1308561238833364992&permissions=3162195407793655&integration_type=0&scope=bot+applications.commands
+  style: 'background-color: #1E90FF !important; border-color: #1E90FF !important;'
+  class: 'hover:bg-[#104E8B] hover:border-[#104E8B]'
   ---
-  Get started
+  Add to Discord
   :::
 
   :::u-button
   ---
   color: neutral
-  icon: simple-icons-github
+  icon: i-lucide-book-open
   size: xl
-  to: https://github.com/nuxt-content/docus
+  to: /getting-started/introduction
   variant: outline
   ---
-  Star on GitHub
+  Read the Docs
   :::
 ::
 
 ::u-page-section
 #title
-Shipped with many features
+Everything Your Server Needs. **Nothing It Doesn't.**
+
+#description
+Lumière doesn't do "good enough." From intelligent logging that catches what matters to dynamic voice channels that adapt to your community, every feature is built to save you time and make your server feel alive.
 
 #features
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://nuxt.com
+  icon: i-lucide-shield-half
+  to: /core-features/moderation-logging
   ---
   #title
-  Built with [Nuxt 4]{.text-primary}
+  **Logging** That Sees Everything
   
   #description
-  Optimized by the most famous Vue framework. Docus gives you everything you need to build fast, performant, and SEO-friendly websites.
+  Every edit. Every deletion. Every member movement. Track critical server events with surgical precision, plus an AFK system that respects your members' time.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://ui.nuxt.com/
+  icon: i-lucide-star
+  to: /core-features/starboard
   ---
   #title
-  Powered by [Nuxt UI]{.text-primary}
+  **Starboard** That Builds Culture
   
   #description
-  Beautiful out of the box, minimal by design but highly customizable. Docus leverages Nuxt UI to give you the best docs writing experience with zero boilerplate, just focus on your content.
+  Your community's best moments shouldn't vanish in chat. Let members highlight legendary messages and create a hall of fame that defines your server's personality.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://content.nuxt.com
+  icon: i-lucide-users
+  to: /core-features/joineroles
   ---
   #title
-  Enhanced Markdown syntax by [Nuxt Content]{.text-primary}
+  **Joineroles** That Onboard Instantly
   
   #description
-  The only thing you need to take care about is writing your content. Write your pages in Markdown and extend with MDC syntax to embed Nuxt UI or custom Vue components. Structure, routing, and rendering are handled for you.
+  New member? They're already set up. Automatically assign roles the moment someone joins—no manual work, no delays, no friction.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://nuxt.com/docs/guide/directory-structure/app-config
+  icon: i-lucide-volume-2
+  to: /core-features/temp-voice-channels
   ---
   #title
-  Customize with [Nuxt App Config]{.text-primary}
+  **TempVoice** That Cleans Itself
   
   #description
-  Update colors, social links, header logos and component styles globally using the `app.config.ts`, no direct code modifications required.
+  Dead channels cluttering your server? Not anymore. Members create voice channels on demand, and they disappear the instant they're empty. Zero maintenance.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://content.nuxt.com/studio
+  icon: i-lucide-smile
+  to: /user-commands/fun-social-commands
   ---
   #title
-  Collaborate on [Nuxt Studio]{.text-primary}
+  **Fun Commands** That Spark Activity
   
   #description
-  Write and manage your content visually, with zero Markdown knowledge required. Let your non technical colleagues collaborate on the documentation and integrate Vue components without code skills.
+  From playful interactions like /kiss and /slap to addictive games like Guess the Number—keep your community engaged when conversation runs dry.
   :::
 
   :::u-page-feature
   ---
-  icon: i-simple-icons-nuxt
-  target: _blank
-  to: https://ui.nuxt.com/components/content-search
+  icon: i-lucide-bar-chart-2
+  to: /user-commands/counters
   ---
   #title
-  Built-in navigation and [full-text search]{.text-primary}
+  **Live Counters** That Flex Growth
   
   #description
-  Only focus on ordering your content, Docus handles the search modal and auto-generates the side navigation for you.
+  Show off your server's momentum with real-time member counts, bot statistics, and more—displayed dynamically in channel names that update themselves.
+  :::
+::
+
+::u-page-section
+#title
+STILL SCROLLING? YOUR SERVER'S WAITING.
+
+#description
+Every second you spend here is a second your server could be running smoother. Lumière sets up in under 2 minutes. The hardest part? Choosing which features to enable first.
+
+#links
+  :::u-button
+  ---
+  color: neutral
+  icon: i-lucide-message-circle
+  size: xl
+  to: https://discord.gg/RZP3A9dq7S
+  variant: outline
+  ---
+  Join Support Server
   :::
 ::
