@@ -53,7 +53,55 @@ Lumière doesn't do "good enough." From intelligent logging that catches what ma
   **Moderation** System
 
   #description
-  Comprehensive moderation toolkit with warns, mutes, timeouts, kicks, and bans. Execute mass actions, review detailed case histories, track escalation patterns, and leverage advanced analytics including moderator leaderboards, action timelines, and full data exports for transparency.
+  Warns, mutes, kicks, bans, and mass actions. Track cases, spot escalation patterns, and pull detailed reports. Because chaos isn't a management strategy.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-scroll-text
+  to: /en/core-features/logging
+  ---
+  #title
+  **Advanced Logging** & Audit Trails
+
+  #description
+  Catch every server event that matters. Messages, roles, channels, members, voice, webhooks, invites fully customizable per category. Know exactly who did what, when, and why.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-database-backup
+  to: /en/core-features/backup
+  ---
+  #title
+  **Server Backup** & Restore
+
+  #description
+  Snapshot your entire server state. Restore roles, channels, permissions, emojis, bans, and more. Sleep better knowing accidental deletions aren't permanent disasters.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-users
+  to: /en/core-features/roles
+  ---
+  #title
+  **Advanced Role** Management
+
+  #description
+  Persistent roles, timed roles, auto-roles on join, bulk assignments. Manage roles at scale with precision and built-in safety checks.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-trash-2
+  to: /en/core-features/purge
+  ---
+  #title
+  **Advanced Message** Purge
+
+  #description
+  Surgical message cleanup by user, content, pattern, links, roles, dates, and more. Confirmation prompts included so you don't accidentally purge your only mod.
   :::
 
   :::u-page-feature
@@ -65,55 +113,7 @@ Lumière doesn't do "good enough." From intelligent logging that catches what ma
   **Custom Boards** with Smart Filtering
 
   #description
-  Build unlimited reaction-based boards with custom thresholds and multiple emoji support. Fine-tune content eligibility with self-star rules, role/user/channel filters, and automatic updates. Boards clean themselves when reactions drop below threshold, keeping content fresh and relevant.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-users
-  to: /en/core-features/roles
-  ---
-  #title
-  **Advanced Role Management**
-
-  #description
-  Assign, persist, and manage roles at any scale with surgical precision. Configure persistent roles that survive leaves, temporary timed roles, auto-roles on member join, date-based join range targeting, and bulk assignment or removal—all with built-in safety checks and confirmation.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-trash-2
-  to: /en/core-features/purge
-  ---
-  #title
-  **Advanced Message Purge**
-
-  #description
-  Powerful message cleanup with surgical filtering options. Purge by user, content type, text patterns, reactions, links, embeds, roles, message IDs, date ranges, and more. Every operation includes confirmation prompts, real-time progress tracking, and comprehensive safety validations before execution.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-moon
-  to: /en/core-features/afk
-  ---
-  #title
-  **AFK Status** Management
-
-  #description
-  Let members set custom AFK status with personalized reasons. Automatically notify anyone who mentions AFK users, track AFK duration, and seamlessly remove status when members return. Moderators can view all active statuses or manage individual entries as needed.
-  :::
-
-  :::u-page-feature
-  ---
-  icon: i-lucide-party-popper
-  to: /en/core-features/fun-commands
-  ---
-  #title
-  **Fun & Interactive** Commands
-
-  #description
-  Keep your community engaged with entertaining features. Play interactive games like Guess the Number and Rock Paper Scissors, fetch random jokes and cat pictures, and use expressive action commands like hug, kiss, slap, poke, pat, and more to add personality to conversations.
+  Reaction-based boards that auto-update and self-clean when reactions drop. Multiple emojis, custom thresholds, role/channel filters build the board *your* community wants.
   :::
 
   :::u-page-feature
@@ -125,7 +125,43 @@ Lumière doesn't do "good enough." From intelligent logging that catches what ma
   **Live Counter** Channels
 
   #description
-  Display real-time server statistics in auto-updating channels. Track total members, bot count, role populations, online/offline users, boost levels, and custom metrics. Set goals, customize templates, and place counters in voice, text, stage, or category channels for instant visibility.
+  Real-time server stats in auto-updating channels. Members, bots, roles, online count, boosts. Flex your growth with precision.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-moon
+  to: /en/core-features/afk
+  ---
+  #title
+  **AFK Status** Management
+
+  #description
+  Members set custom AFK status. Auto-notify anyone who mentions them. Moderators can view or manage as needed.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-bell
+  to: /en/core-features/reminders
+  ---
+  #title
+  **Smart Reminders** & Scheduling
+
+  #description
+  Personal and server reminders with full timezone support. One-time or recurring alerts, natural language time parsing, DST-safe scheduling, and persistent delivery even after restarts. Never forget an event again.
+  :::
+
+  :::u-page-feature
+  ---
+  icon: i-lucide-party-popper
+  to: /en/core-features/fun-commands
+  ---
+  #title
+  **Fun & Interactive** Commands
+
+  #description
+  Games, jokes, cat pictures, and expressive actions because moderation shouldn't feel like a prison sentence.
   :::
 ::
 
