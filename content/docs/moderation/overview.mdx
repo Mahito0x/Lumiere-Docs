@@ -1,0 +1,29 @@
+---
+title: Overview
+description: Everything Lumière offers for keeping your server safe and organized.
+---
+
+Moderation in Lumière covers the full lifecycle of handling problem behavior: taking action (ban, kick, mute, warn), tracking it (cases and strikes), cleaning up after it (message purging), catching it automatically (AutoPurge and conduct tracking), and keeping a record of it (mod logging).
+
+## What's in this section
+
+| Page | What it covers |
+|---|---|
+| [Core Actions](/moderation/core-actions) | `/ban`, `/kick`, `/mute`, `/warn`, and related commands |
+| [Strikes](/moderation/strikes) | A lighter-weight infraction system with automatic escalation |
+| [Cases](/moderation/cases) | Every moderation action gets a case — search, filter, and review history |
+| [Message Purging](/moderation/message-purging) | `/purge` — advanced, filterable message deletion |
+| [Auto-Purge](/moderation/auto-purge) | Scheduled, automatic message cleanup for busy channels |
+| [Conduct Tracking](/moderation/conduct-tracking) | Passive tracking of slurs, swearing, toxicity, and suspicious links |
+| [Mod Logging](/moderation/mod-logging) | Automatic logging of moderation actions to a channel |
+| [Channel Tools](/moderation/channel-tools) | `/say` and `/nuke` |
+
+## Who this section is for
+
+Most pages here require a Discord permission like **Ban Members**, **Kick Members**, or **Manage Messages** to use — Lumière checks your actual Discord permissions, not just server membership. If a command doesn't work for you, that's usually why; see [Permissions & Access](/administration/permissions-and-access).
+
+## A quick mental model
+
+- **Cases** are the permanent record — every ban, kick, mute, warn, and strike creates one.
+- **Strikes** are a lighter system on top of cases, meant for smaller infractions that build up and can auto-escalate.
+- **Conduct tracking** runs quietly in the background and doesn't take action on its own — it scores behavior so mods have visibility.

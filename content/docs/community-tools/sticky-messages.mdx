@@ -1,0 +1,33 @@
+---
+title: Sticky Messages
+description: Keep an important message pinned to the bottom of an active channel.
+---
+
+A sticky message automatically reposts itself to stay at the bottom of a channel, even as new messages come in — useful for rules, ongoing announcements, or anything you want members to always see without scrolling.
+
+All commands are grouped under `/sticky` and require **Manage Messages**.
+
+## Create a sticky message
+
+```
+/sticky create content message_id threshold
+```
+
+- `content` — the text for the sticky (optional if you're copying an embed instead).
+- `message_id` — copy an embed from an existing message by its ID, instead of writing new content.
+- `threshold` — how many new messages should appear before the sticky reposts itself (default: 1, meaning it reposts after every single message).
+
+## Manage stickies
+
+| Command | What it does |
+|---|---|
+| `/sticky list` | List all sticky messages in the server |
+| `/sticky info` | Show details about the sticky in the current channel |
+| `/sticky remove` | Remove sticky messages from the server |
+| `/sticky toggle` | Open the full sticky management dashboard |
+| `/sticky ignore` | Manage channels/roles/users ignored by stickies |
+| `/sticky reset` | Re-enable a sticky that auto-disabled after an error |
+
+## A note on threshold
+
+A `threshold` of 1 means the sticky reposts after every message, which keeps it always visible but generates the most traffic. In a very active channel, a higher threshold (e.g. 5 or 10) means the sticky reposts less often — fewer notifications, less visual noise, but it may briefly get buried during bursts of activity.

@@ -1,0 +1,42 @@
+---
+title: Bulk Role Management
+description: Assign or remove a role across many members at once.
+---
+
+Bulk role tools let you apply a role change across your entire server (or a subset of it) instead of doing it member by member. All commands are grouped under `/massrole` and require **Manage Roles**.
+
+## Assign a role in bulk
+
+```
+/massrole assign role target
+```
+
+`target` chooses who gets the role: **Members only** (default), **Bots only**, or **Everyone**.
+
+## Remove a role in bulk
+
+```
+/massrole unassign role target
+```
+
+Same targeting options as assign.
+
+## Sync a role
+
+```
+/massrole sync role target
+```
+
+Assigns the role to anyone in the target group who's missing it — without touching members who already have it. Useful for catching people who joined before a role existed, or fixing gaps after a partial rollout.
+
+## Preview before you commit
+
+```
+/massrole preview role action target
+```
+
+Shows exactly who would be affected by an assign or unassign, without making any changes. Given how many members a bulk action can touch at once, it's worth running preview first — especially on larger servers.
+
+<Callout type="warn">
+Bulk role changes on a large server can take a little time to complete and count toward Discord's rate limits. Avoid running multiple bulk role commands back to back.
+</Callout>

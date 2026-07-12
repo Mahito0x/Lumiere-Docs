@@ -1,0 +1,112 @@
+---
+title: Counting Game
+description: A collaborative number-counting game with streaks, saves, and special modes.
+---
+
+The counting game turns a channel into a collaborative challenge: members take turns posting the next number in sequence (1, 2, 3...). Mess up — post the wrong number, or post twice in a row — and depending on your server's settings, the count may reset.
+
+All admin commands are grouped under `/counting` and require **Manage Server**.
+
+## For members
+
+### Check stats
+
+```
+/counting stats channel user
+```
+
+View counting performance for yourself or another member, server-wide or in a specific channel.
+
+### Leaderboard
+
+```
+/counting leaderboard channel stat_type
+```
+
+Rank by Total Counts, Best Streak, or Accuracy.
+
+### Channel info
+
+```
+/counting info channel
+```
+
+View the rules and configuration for a specific counting channel.
+
+### Saves
+
+```
+/counting saves user
+```
+
+Some counting configurations give members "saves" — a way to protect against a streak-ending mistake. This shows your (or another user's) available saves and the server's shared save pool.
+
+## For admins
+
+### Set up a counting channel
+
+```
+/counting setup
+```
+
+### Configure a channel
+
+```
+/counting config channel
+```
+
+Fine-tune the counting logic and parameters for a channel.
+
+### Toggle automation modules
+
+```
+/counting modules channel
+```
+
+Turn specific counting features on or off for a channel.
+
+### Access control
+
+```
+/counting access channel
+```
+
+Manage a blacklist/whitelist of who's allowed to count in a specific channel.
+
+### Chaos Mode
+
+```
+/counting chaos channel
+```
+
+Toggles a more unpredictable variant of the counting game for that channel.
+
+### Rank roles
+
+```
+/counting positionroles position role
+```
+
+Assign a role to whoever holds a specific leaderboard rank (1–10). Set `position` to `0` to clear all rank roles.
+
+### Bypass rules
+
+```
+/counting bypass channel
+```
+
+An admin override for the message deletion rules that normally apply in counting channels.
+
+### Turn a channel on/off
+
+```
+/counting toggle channel
+```
+
+### Remove counting from a channel
+
+```
+/counting terminate channel
+```
+
+Fully disables counting for that channel.

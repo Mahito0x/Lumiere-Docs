@@ -1,0 +1,4 @@
+Contact: mailto:security@lumierelabs.xyz
+Expires: 2027-07-12T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://docs.lumierelabs.xyz/.well-known/security.txt

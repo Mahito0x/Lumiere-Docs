@@ -1,0 +1,93 @@
+---
+title: Highlight Boards
+description: Reaction-powered "best of" boards for great messages.
+---
+
+Highlight boards work like a server "hall of fame" — when a message gets enough of a specific reaction (like ⭐), it automatically gets reposted to a board channel. Your server can have multiple boards, each with its own emoji, threshold, and channel.
+
+## For members
+
+### Privacy
+
+```
+/board privacy
+```
+
+Toggle whether your own messages are eligible to appear on boards in this server.
+
+### Leaderboard
+
+```
+/board leaderboard global_scope
+```
+
+See top users, messages, and channels across all boards. Set `global_scope` to see stats across every server Lumière is in, instead of just yours.
+
+### Your streak
+
+```
+/board streak
+```
+
+View your current board activity streak.
+
+## For admins
+
+Admin commands are grouped under `/boardsetup` and require **Manage Server**.
+
+### Create a board
+
+```
+/boardsetup create
+```
+
+### Edit a board
+
+```
+/boardsetup edit board
+```
+
+Change a board's name, channel, emoji, or the reaction threshold needed to get featured.
+
+### Delete a board
+
+```
+/boardsetup delete board
+```
+
+Removes the board and everything posted to it.
+
+### List all boards
+
+```
+/boardsetup list
+```
+
+### View board stats
+
+```
+/boardsetup stats board
+```
+
+### Full settings panel
+
+```
+/boardsetup settings board
+```
+
+### Role weighting ("Star Power")
+
+```
+/boardsetup roleweight board role weight
+```
+
+Makes reactions from certain roles count for more than a normal reaction — set `weight` from 1–10, or `0` to remove the weighting. Useful for giving staff or trusted-member reactions extra influence on what gets featured.
+
+### Server-wide defaults
+
+```
+/defaults view
+/defaults settings
+```
+
+Set default settings that apply to every new board you create, so you don't have to configure each one from scratch.

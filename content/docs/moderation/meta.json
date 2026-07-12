@@ -1,0 +1,16 @@
+{
+  "title": "Moderation",
+  "icon": "ShieldCheck",
+  "pages": [
+    "overview",
+    "core-actions",
+    "strikes",
+    "cases",
+    "message-purging",
+    "auto-purge",
+    "conduct-tracking",
+    "mod-logging",
+    "channel-tools",
+    "commands"
+  ]
+}

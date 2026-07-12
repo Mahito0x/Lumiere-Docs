@@ -1,0 +1,44 @@
+---
+title: AFK Status
+description: Let the server know you're away, and catch up on mentions when you're back.
+---
+
+## For members
+
+### Set your AFK status
+
+```
+/afk set reason duration
+```
+
+- `reason` — why you're away (shown to anyone who mentions you).
+- `duration` — optional auto-clear timer, e.g. `30m`, `2h`, `1d`. Leave empty and your AFK status stays until you clear it yourself.
+
+While you're AFK, anyone who mentions you will see your status and reason. Lumière also tracks who mentioned you while you were away, so you can catch up.
+
+### Check your status
+
+```
+/afk status
+```
+
+Shows your current AFK state and any mentions you've received while away.
+
+### Cancel your AFK status manually
+
+```
+/afk cancel
+```
+
+Your AFK status also clears automatically the next time you send a message, so you often won't need this — it's there for when you want to come back without posting anything first.
+
+## For admins
+
+Admin commands are grouped under `/afkadmin` and require **Manage Server**.
+
+| Command | What it does |
+|---|---|
+| `/afkadmin clear user` | Clear AFK status for a specific member |
+| `/afkadmin clearall` | Clear AFK status for every member in the server |
+| `/afkadmin list` | See everyone currently AFK |
+| `/afkadmin panel` | Manage server-wide AFK behavior and whitelist settings |

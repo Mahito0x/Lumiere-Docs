@@ -1,0 +1,9 @@
+{
+  "title": "Reference",
+  "icon": "BookOpenText",
+  "pages": [
+    "command-index",
+    "permissions-reference",
+    "glossary"
+  ]
+}

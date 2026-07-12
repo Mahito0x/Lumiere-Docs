@@ -1,0 +1,32 @@
+---
+title: Scheduled Backups
+description: Automatic, recurring backups on an interval you choose.
+---
+
+Instead of remembering to run `/backup create` regularly, you can have Lumière create backups automatically on a schedule.
+
+All commands are grouped under `/interval`.
+
+## Turn on scheduled backups
+
+```
+/interval on
+```
+
+## Turn off scheduled backups
+
+```
+/interval off
+```
+
+## Check your current schedule
+
+```
+/interval show
+```
+
+Shows whether scheduled backups are active, and when the next one is due.
+
+## How this fits with manual backups
+
+Scheduled backups don't replace manual ones — you can still run `/backup create` any time for an on-demand snapshot, for example right before making a big structural change to your server. Use [`/backup list`](/server-backups/managing-backups#list-your-backups) to see both scheduled and manual backups together.

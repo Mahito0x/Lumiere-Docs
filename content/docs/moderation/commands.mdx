@@ -1,0 +1,79 @@
+---
+title: Commands
+description: Full command reference for Moderation.
+---
+
+## Core actions
+
+| Command | Description | Permission |
+|---|---|---|
+| `/ban` | Ban a user, with optional temp ban, soft ban, and hack-ban support | Ban Members |
+| `/unban` | Unban a user | Ban Members |
+| `/kick` | Kick a member | Kick Members |
+| `/mute` | Timeout a member | Moderate Members |
+| `/unmute` | Remove a timeout | Moderate Members |
+| `/warn` | Issue a warning | Manage Messages |
+| `/warns` | View a user's warnings | Manage Messages |
+| `/note` | Add a note to a case | Manage Messages |
+| `/history` | View a user's full moderation history | Manage Messages |
+| `/slowmode` | Set or disable channel slowmode | Manage Channels |
+| `/cleanup` | Clear Lumière's messages from your own DMs | None |
+
+## Strikes
+
+| Command | Description | Permission |
+|---|---|---|
+| `/strike add` | Issue a strike | Manage Messages |
+| `/strike remove` | Remove (close) a strike | Manage Messages |
+| `/strike list` | List strikes for a member | Manage Messages |
+| `/strike setup` | Configure strike decay/escalation | Administrator |
+
+## Cases
+
+| Command | Description | Permission |
+|---|---|---|
+| `/case info` | View a specific case | None |
+| `/case list` | List and filter cases | None |
+| `/case delete` | Delete one case or all cases | Administrator |
+
+## Message purging
+
+| Command | Description | Permission |
+|---|---|---|
+| `/purge` | Filtered bulk message deletion | Manage Messages |
+
+## Auto-Purge
+
+| Command | Description | Permission |
+|---|---|---|
+| `/ap setup` | Create/update AutoPurge for a channel | Manage Server |
+| `/ap status` | View all AutoPurge configurations | Manage Server |
+| `/ap toggle` | Turn AutoPurge on/off for a channel | Manage Server |
+| `/ap exempt` | Manage exempt roles/users | Manage Server |
+| `/ap remove` | Delete an AutoPurge configuration | Manage Server |
+| `/ap runnow` | Run a purge cycle immediately | Manage Server |
+
+## Conduct tracking
+
+| Command | Description | Permission |
+|---|---|---|
+| `/conduct` | View your (or another member's) conduct profile | None |
+| `/conduct leaderboard` | View the conduct leaderboard | None |
+| `/conduct totals` | View category totals | None |
+| `/conduct config` | Configure alert channel/pings | Manage Server |
+| `/conduct reset` | Wipe a user's conduct record | Manage Server |
+
+## Mod logging
+
+| Command | Description | Permission |
+|---|---|---|
+| `/log autosetup` | Auto-configure all logging channels | Manage Server |
+| `/log setup` | Manually configure logging channels | Manage Server |
+| `/log ignore` | Manage ignored entities | Manage Server |
+
+## Channel tools
+
+| Command | Description | Permission |
+|---|---|---|
+| `/say` | Send a message as Lumière | Administrator |
+| `/nuke` | Clone and replace a channel to wipe its history | Manage Channels |

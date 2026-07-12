@@ -1,0 +1,14 @@
+{
+  "title": "Server Backups",
+  "icon": "DatabaseBackup",
+  "pages": [
+    "overview",
+    "creating-a-backup",
+    "restoring-a-backup",
+    "managing-backups",
+    "encrypted-backups",
+    "templates",
+    "scheduled-backups",
+    "commands"
+  ]
+}

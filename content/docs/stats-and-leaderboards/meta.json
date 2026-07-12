@@ -1,0 +1,11 @@
+{
+  "title": "Stats & Leaderboards",
+  "icon": "TrendingUp",
+  "pages": [
+    "overview",
+    "your-stats",
+    "server-analytics",
+    "leaderboards",
+    "commands"
+  ]
+}

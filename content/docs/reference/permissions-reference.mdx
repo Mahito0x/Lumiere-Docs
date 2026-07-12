@@ -1,0 +1,20 @@
+---
+title: Permissions Reference
+description: Which Discord permission each command category requires.
+---
+
+This is a quick-lookup table of the Discord permission tied to each command area. For the full explanation of how permissions, role hierarchy, and server-level restrictions interact, see [Permissions & Access](/administration/permissions-and-access).
+
+| Permission | Command areas |
+|---|---|
+| **Administrator** | Server Backups, `/say`, `/case delete`, `/strike setup` |
+| **Manage Server** | Module management (`/system`), mod logging, AutoPurge, conduct config, birthday/counting/board admin, AFK admin |
+| **Manage Roles** | All of Roles & Access, Voice & Channels setup |
+| **Manage Channels** | Voice channel setup, counters, `/nuke`, `/slowmode` |
+| **Manage Messages** | `/purge`, sticky messages, warnings, strikes, notes, history |
+| **Ban Members** | `/ban`, `/unban` |
+| **Kick Members** | `/kick` |
+| **Moderate Members** | `/mute`, `/unmute` |
+| **None** (everyone) | Engagement & Games, social interactions, `/info`, most member-facing Community Tools and Stats commands |
+
+If a command isn't behaving as expected, run [`/system access`](/administration/module-management#see-what-restricts-you) to check whether a server-level restriction — separate from Discord permissions — is the actual cause.

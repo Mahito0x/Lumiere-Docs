@@ -1,0 +1,11 @@
+{
+  "title": "Administration",
+  "icon": "Settings2",
+  "pages": [
+    "overview",
+    "module-management",
+    "server-info",
+    "permissions-and-access",
+    "dashboard-guide"
+  ]
+}

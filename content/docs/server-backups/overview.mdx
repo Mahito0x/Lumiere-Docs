@@ -1,0 +1,23 @@
+---
+title: Overview
+description: Full server backups you can restore, encrypt, share, or turn into a template.
+---
+
+Lumière can capture a full snapshot of your server — channels, roles, permissions, and structure — and let you restore it later, compare it against your current setup, or hand it to another server as a starting template.
+
+Every command in this section requires **Administrator**, since restoring a backup can significantly change a server's structure.
+
+## What's in this section
+
+| Page | What it covers |
+|---|---|
+| [Creating a Backup](/server-backups/creating-a-backup) | The guided backup flow |
+| [Restoring a Backup](/server-backups/restoring-a-backup) | Loading, comparing, and monitoring a restore |
+| [Managing Backups](/server-backups/managing-backups) | List, rename, duplicate, delete, import/export |
+| [Encrypted Backups](/server-backups/encrypted-backups) | AES-256-GCM encryption for sensitive backups |
+| [Templates](/server-backups/templates) | Publishing and applying public server templates |
+| [Scheduled Backups](/server-backups/scheduled-backups) | Automatic backups on an interval |
+
+## A word of caution
+
+Restoring a backup changes your server's actual structure — channels, roles, and permissions can be created, modified, or removed to match the backup. Always run `/backup compare` before `/backup load` so you know exactly what will change. See [Restoring a Backup](/server-backups/restoring-a-backup).

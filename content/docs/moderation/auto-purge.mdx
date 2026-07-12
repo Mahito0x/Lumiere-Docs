@@ -1,0 +1,60 @@
+---
+title: Auto-Purge
+description: Scheduled, automatic message cleanup for busy channels.
+---
+
+AutoPurge runs message cleanup on a schedule, so you don't have to manually purge the same channel over and over. It's built for things like spam-prone channels, temporary announcement channels, or any channel that needs to stay tidy without constant attention.
+
+All AutoPurge commands are grouped under `/ap` and require permission to manage the server.
+
+## Set up AutoPurge for a channel
+
+```
+/ap setup channel
+```
+
+Opens a configuration flow where you set the interval, what to delete, and any extra filters for that channel.
+
+## Check current configurations
+
+```
+/ap status
+```
+
+Shows every channel with AutoPurge configured in your server, along with its current settings.
+
+## Turn a channel's AutoPurge on or off
+
+```
+/ap toggle channel
+```
+
+Pauses or resumes AutoPurge for a channel without deleting its configuration — useful if you want to temporarily stop it.
+
+## Manage exemptions
+
+```
+/ap exempt channel
+```
+
+Lets you exclude specific roles or users from being purged in a channel — handy for pinned announcements from staff, for example.
+
+## Remove AutoPurge from a channel
+
+```
+/ap remove channel
+```
+
+Permanently deletes the AutoPurge configuration for that channel.
+
+## Run a cycle immediately
+
+```
+/ap runnow channel
+```
+
+Triggers an AutoPurge cycle right now instead of waiting for the next scheduled run — useful for testing your configuration.
+
+## How it relates to `/purge`
+
+`/purge` is a one-time, manual action. AutoPurge is the "set it and forget it" version — configure it once, and Lumière keeps a channel clean on its own going forward.

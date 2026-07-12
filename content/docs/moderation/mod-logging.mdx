@@ -1,0 +1,36 @@
+---
+title: Mod Logging
+description: Automatic logging of moderation and server actions.
+---
+
+Mod logging gives you a running, automatic record of moderation actions and server events, posted to channels you configure. This is the backbone of accountability for a server with more than one moderator — everyone can see what actions were taken, by whom, and why.
+
+All logging commands are grouped under `/log` and require **Manage Server**.
+
+## Quick setup (recommended)
+
+```
+/log autosetup
+```
+
+Automatically creates and configures the logging channels Lumière needs, using sensible defaults. This is the fastest way to get logging running — most servers only need this one command.
+
+## Manual setup
+
+```
+/log setup
+```
+
+Walks you through configuring logging channels yourself if you want more control than autosetup gives you — for example, routing different types of logs to different existing channels.
+
+## Manage ignored entities
+
+```
+/log ignore
+```
+
+Lets you exclude specific channels, roles, or users from being logged — useful if you have a staff-only channel that generates a lot of noise you don't need recorded.
+
+## What gets logged
+
+Once configured, mod logging automatically records moderation actions (bans, kicks, mutes, warns) as they happen — you don't need to do anything extra once setup is complete. This works alongside [Cases](/moderation/cases), which is your searchable record; mod logging is the real-time feed of the same information.

@@ -1,0 +1,68 @@
+---
+title: Module Management
+description: Turn features on or off, and control exactly who can use each command.
+---
+
+Every module and command in Lumière can be independently enabled, disabled, or restricted per server. This is the control center for that. All commands are grouped under `/system` and require **Manage Server**.
+
+## The main control panel
+
+```
+/system control
+```
+
+Opens an interactive panel where you can:
+
+- Enable or disable an entire module
+- Enable or disable a specific command
+- Whitelist or blacklist roles or users for a specific command
+
+**Whitelist** means only the listed roles/users can use the command. **Blacklist** means everyone *except* the listed roles/users can use it. Use whichever fits — for example, whitelist a moderation command to your mod-role only, or blacklist a fun command from a "no-fun-allowed" muted role.
+
+## Remove someone from a whitelist or blacklist
+
+```
+/system remove command target
+```
+
+Removes a specific user or role from a command's whitelist/blacklist without resetting the whole configuration.
+
+## Reset a command to default
+
+```
+/system reset command
+```
+
+Clears any custom configuration on a command — whitelist, blacklist, and enabled/disabled state — back to Lumière's defaults.
+
+## Check a command's status
+
+```
+/system info command
+```
+
+Shows a specific command's current configuration, and what access level *you* have for it.
+
+## Security audit
+
+```
+/system audit
+```
+
+Lists every command in your server with a non-default configuration — a fast way to review everything that's been customized, in one place.
+
+## See what's disabled
+
+```
+/system disabled
+```
+
+Lists every command currently disabled in your server.
+
+## See what restricts you
+
+```
+/system access
+```
+
+Shows what restrictions currently apply to you specifically — useful for double-checking your own setup, or helping a member understand why a command isn't working for them.

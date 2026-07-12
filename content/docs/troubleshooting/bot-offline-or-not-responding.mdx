@@ -1,0 +1,22 @@
+---
+title: Bot Offline or Not Responding
+description: What to check if Lumière isn't responding at all.
+---
+
+## 1. Check Lumière's status in your member list
+
+If Lumière shows as offline in your member list, the bot itself is down — this usually resolves on its own shortly. There's nothing to configure on your end for this case.
+
+## 2. If Lumière shows online but doesn't respond
+
+- Run `/ping` first — if that responds, the bot is fine and the issue is likely specific to one command (see [Common Issues](/troubleshooting/common-issues)).
+- Check that Lumière has **Send Messages** and **View Channel** permission in the channel you're testing in. A missing channel-level permission override is a common, easy-to-miss cause.
+- Try the command in a different channel to confirm whether it's channel-specific or server-wide.
+
+## 3. Slash commands not appearing at all
+
+Slash command registration can occasionally lag behind, especially right after Lumière joins a server or after an update. Give it a few minutes; if commands still aren't showing up after that, try kicking and re-inviting the bot.
+
+## 4. Still nothing?
+
+If none of the above resolves it, it's likely an issue on Lumière's end rather than your server's configuration. Check our [Status Page](https://status.lumierelabs.xyz) for ongoing incident reports.

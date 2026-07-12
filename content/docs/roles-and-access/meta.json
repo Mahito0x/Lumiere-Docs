@@ -1,0 +1,13 @@
+{
+  "title": "Roles & Access",
+  "icon": "KeyRound",
+  "pages": [
+    "overview",
+    "auto-roles-on-join",
+    "persistent-roles",
+    "temporary-roles",
+    "bulk-role-management",
+    "join-date-roles",
+    "commands"
+  ]
+}

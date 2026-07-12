@@ -1,0 +1,56 @@
+---
+title: Temporary Roles
+description: Roles that expire automatically after a set amount of time.
+---
+
+Temporary roles remove themselves after a set duration — no need to remember to take them away manually. Useful for things like event access, timed permissions, or restricted roles with a built-in end date.
+
+All commands are grouped under `/temprole` and require **Manage Roles**.
+
+## Assign a temporary role
+
+```
+/temprole add user role duration reason
+```
+
+`duration` accepts formats like `1h`, `30m`, `2d`, or `1 week`.
+
+## Extend a temp role
+
+```
+/temprole extend user role duration reason
+```
+
+Adds more time to a role that's already active — the new duration is added on top of whatever time remains.
+
+## Remove a temp role early
+
+```
+/temprole remove user role
+```
+
+Manually removes it before it would have expired on its own.
+
+## Expire a temp role immediately
+
+```
+/temprole expire user role
+```
+
+Different from `remove` — this triggers the normal expiry flow right now, as if the timer had just run out (useful if your setup does something specific on expiry, like a logged notification).
+
+## List active temp roles
+
+```
+/temprole list user
+```
+
+Leave `user` empty to see every active temp role in the server.
+
+## View details on a specific temp role
+
+```
+/temprole info user role
+```
+
+Shows exactly when a given temp role on a user expires.

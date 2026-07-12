@@ -1,0 +1,57 @@
+---
+title: Conduct Tracking
+description: Passive, ongoing tracking of slurs, swearing, toxicity, and suspicious links.
+---
+
+Conduct tracking runs quietly in the background of your server. It doesn't take action on its own — no auto-bans, no auto-mutes — it simply keeps a running score of behavior across four categories (slurs, swears, toxicity, and links) so moderators have visibility into patterns over time.
+
+All conduct commands are grouped under `/conduct`.
+
+## For members
+
+### Check a conduct profile
+
+```
+/conduct member
+```
+
+Leave `member` empty to see your own profile. This shows a breakdown across the four tracked categories.
+
+### View the conduct leaderboard
+
+```
+/conduct leaderboard scope
+```
+
+Set `scope` to `True` to view stats across all servers Lumière is in, instead of just yours.
+
+### View category totals
+
+```
+/conduct totals category scope
+```
+
+- `category` — Slurs, Swears, Toxicity, or Links.
+- `scope` — Server or Global.
+
+## For admins
+
+### Configure alerts
+
+```
+/conduct config channel ping
+```
+
+Sets which channel receives automated behavioral alerts, and whether moderators get pinged when one fires. Requires **Manage Server**.
+
+### Reset a user's record
+
+```
+/conduct reset member
+```
+
+Permanently wipes a specific user's conduct record. Requires **Manage Server**. This can't be undone, so use it deliberately — usually after a conversation with the member, not as a punishment.
+
+## What this is (and isn't)
+
+Conduct tracking is a visibility tool, not an enforcement tool. It's designed to help mods notice patterns — a member whose toxicity score is climbing, for example — before things escalate into something that needs a ban or kick. Pair it with [Strikes](/moderation/strikes) or [Core Actions](/moderation/core-actions) if you want tracked behavior to actually result in consequences.

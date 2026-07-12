@@ -1,0 +1,9 @@
+{
+  "title": "Free vs Plus",
+  "icon": "Gem",
+  "pages": [
+    "overview",
+    "upgrading-your-server",
+    "billing-and-subscription"
+  ]
+}

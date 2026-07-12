@@ -1,0 +1,28 @@
+---
+title: Encrypted Backups
+description: AES-256-GCM encryption for backups containing sensitive server data.
+---
+
+Backups can be encrypted with a passphrase you choose, using AES-256-GCM — a strong, industry-standard encryption method. This is useful if your backup contains anything sensitive you don't want readable without your passphrase.
+
+## Encrypt an existing backup
+
+```
+/backup lock backup_id passphrase
+```
+
+## Remove encryption
+
+```
+/backup unlock backup_id
+```
+
+You'll need the original passphrase to unlock it.
+
+<Callout type="warn">
+Lumière never stores your passphrase. If you lose it, an encrypted backup cannot be recovered or unlocked by anyone — including Lumière support. Keep it somewhere safe, like a password manager.
+</Callout>
+
+## Encrypting at creation time
+
+You can also skip this two-step process and encrypt a backup the moment it's created — see [Creating a Backup](/server-backups/creating-a-backup#optional-encrypt-on-creation).

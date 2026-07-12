@@ -1,0 +1,52 @@
+---
+title: Strikes
+description: A lighter infraction system with automatic escalation.
+---
+
+Strikes are for behavior that doesn't need a full ban or kick on its own, but should count toward something if it keeps happening. Think of strikes as a point system that can automatically escalate to a mute, kick, or ban once someone crosses a threshold you configure.
+
+## For members
+
+If you've received a strike, a moderator can tell you why with:
+
+```
+/strike list member
+```
+
+Strikes decay automatically after a set number of days (configured by your server's admins — 90 days by default), so a single old strike won't follow you forever.
+
+## For admins
+
+### Issue a strike
+
+```
+/strike add member reason
+```
+
+Requires **Manage Messages**.
+
+### Remove a strike
+
+```
+/strike remove member case_id
+```
+
+Closes a specific strike by its case ID. Requires **Manage Messages**.
+
+### List strikes for a member
+
+```
+/strike list member
+```
+
+Requires **Manage Messages**.
+
+### Configure escalation
+
+```
+/strike setup decay_days
+```
+
+Sets how many days it takes before a strike stops counting toward escalation. Set `decay_days` to `0` for strikes that never expire. Requires **Administrator**.
+
+Strike escalation itself (what happens automatically once a member crosses your threshold — a mute, kick, or ban) is configured through the same setup flow and applies server-wide.

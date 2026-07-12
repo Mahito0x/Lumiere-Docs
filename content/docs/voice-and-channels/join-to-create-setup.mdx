@@ -1,0 +1,48 @@
+---
+title: Join-to-Create Setup
+description: Admin setup for the temporary voice channel system.
+---
+
+All setup commands are grouped under `/temp` and require **Manage Channels**.
+
+## Quick setup
+
+```
+/temp autosetup
+```
+
+Sets up Join-to-Create with sensible defaults in one step — the fastest way to get started.
+
+## Manual setup
+
+```
+/temp setup editable category permissions
+```
+
+- `editable` — whether channel owners can customize their own channels (recommended: on).
+- `category` — which category new temp channels are created under.
+- `permissions` — how permissions are inherited: **Category** (inherit from the category) or **Join To Create** (inherit from the creation channel itself).
+
+## Set defaults for new channels
+
+```
+/temp defaults name_template user_limit editable category permissions
+```
+
+`name_template` supports `{user}` as a placeholder for the member's username, so channels can be named like "user's Channel" automatically.
+
+## Edit an existing setup
+
+```
+/temp edit channel editable name_template user_limit category permissions
+```
+
+Change any of the above for an already-configured Join-to-Create channel.
+
+## Remove the system entirely
+
+```
+/temp delete
+```
+
+Completely removes Join-to-Create from your server. Existing temporary channels created before this aren't retroactively deleted, but no new ones will be created.

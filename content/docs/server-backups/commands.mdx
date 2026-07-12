@@ -1,0 +1,29 @@
+---
+title: Commands
+description: Full command reference for Server Backups.
+---
+
+All commands in this section require **Administrator**.
+
+| Command | Description |
+|---|---|
+| `/backup create` | Guided 4-step backup creation, with optional encryption |
+| `/backup list` | View all your backups |
+| `/backup info` | View details and preview contents of a backup |
+| `/backup load` | Restore a backup to this server |
+| `/backup compare` | Compare current server state against a backup |
+| `/backup status` | Check active restoration progress |
+| `/backup cancel` | Cancel the currently running restore |
+| `/backup rename` | Rename a backup's reference label |
+| `/backup duplicate` | Create a copy of an existing backup |
+| `/backup export` | Export a backup as a JSON file |
+| `/backup import` | Import a backup from a JSON file |
+| `/backup delete` | Permanently delete a backup |
+| `/backup purge` | Delete all your backups |
+| `/backup lock` | Encrypt a backup with AES-256-GCM |
+| `/backup unlock` | Remove encryption from a backup |
+| `/backup publish` | Toggle public template visibility |
+| `/backup template` | Browse or apply public templates |
+| `/interval on` | Enable scheduled automatic backups |
+| `/interval off` | Disable scheduled automatic backups |
+| `/interval show` | Show current backup schedule and status |

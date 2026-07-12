@@ -1,0 +1,68 @@
+---
+title: Managing Backups
+description: List, rename, duplicate, delete, import, and export your backups.
+---
+
+## List your backups
+
+```
+/backup list
+```
+
+Shows every backup you have access to, with its ID, label, and creation date.
+
+## View backup details
+
+```
+/backup info backup_id
+```
+
+Shows detailed info and a content preview for a specific backup, without restoring anything.
+
+## Rename a backup
+
+```
+/backup rename backup_id
+```
+
+Changes a backup's reference label — purely cosmetic, doesn't affect its contents.
+
+## Duplicate a backup
+
+```
+/backup duplicate backup_id
+```
+
+Creates a copy of an existing backup under a new ID, useful before making changes you might want to undo.
+
+## Export a backup
+
+```
+/backup export backup_id
+```
+
+Exports the backup as a JSON file, so you can move it outside Lumière entirely — for cross-server use, or just to keep an offline copy.
+
+## Import a backup
+
+```
+/backup import file
+```
+
+Imports a backup from a JSON file previously created with `/backup export`.
+
+## Delete a backup
+
+```
+/backup delete backup_id
+```
+
+Permanently deletes a single backup. This can't be undone.
+
+## Delete all your backups
+
+```
+/backup purge server_filter
+```
+
+Deletes every backup you have. Set `server_filter` to only purge backups originally created from a specific server name, instead of everything.

@@ -1,0 +1,53 @@
+---
+title: Persistent Roles
+description: Roles that automatically come back if a member leaves and rejoins.
+---
+
+By default, Discord removes all of a member's roles when they leave a server — even if they rejoin five minutes later. Persistent roles fix that for roles you mark as persistent: Lumière remembers what the member had and restores it automatically on rejoin.
+
+All commands are grouped under `/persistrole`.
+
+## Make a role persistent for someone
+
+```
+/persistrole toggle action users role reason
+```
+
+- `action` — Enable Persistence or Disable Persistence.
+- `users` — up to 5 members at once.
+- `role` — the role to make persistent (or stop persisting).
+- `reason` — optional, for your audit trail.
+
+## Clear all persistent roles for a user
+
+```
+/persistrole clear user reason
+```
+
+Removes every persistent role tracked for that user in one action.
+
+## View persistent roles
+
+```
+/persistrole view user
+```
+
+Leave `user` empty to see a server-wide overview instead of one member's roles.
+
+## List roles for a specific user
+
+```
+/persistrole list user
+```
+
+## Turn the feature on/off server-wide
+
+```
+/persistrole server
+```
+
+Enables or disables persistent roles for your entire server — useful if you want to pause the feature temporarily without losing your per-user configuration.
+
+## Good use cases
+
+Persistent roles are commonly used for things you don't want members to be able to "reset" by leaving and rejoining — like a booster role, a role tied to a purchase, or a moderation-relevant role like a "restricted" tag.

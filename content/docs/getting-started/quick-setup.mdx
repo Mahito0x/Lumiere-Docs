@@ -1,0 +1,56 @@
+---
+title: Quick Setup
+description: The first things to configure after adding Lumière.
+---
+
+You don't need to set up every feature at once. This page covers the handful of things worth doing in your first five minutes with Lumière.
+
+## 1. Check the bot is responding
+
+Run:
+
+```
+/ping
+```
+
+This shows Lumière's latency and confirms it's online and responding in your server.
+
+## 2. Set your command prefix (optional)
+
+Slash commands work immediately with no setup. If you also want classic `!command`-style prefix commands, set your prefix with:
+
+```
+/prefix
+```
+
+Leave this alone if you only plan on using slash commands.
+
+## 3. Set up moderation logging
+
+If you want a record of bans, kicks, warns, and other actions, set up your mod-log channels:
+
+```
+/log autosetup
+```
+
+This automatically creates and configures the logging channels Lumière needs. You can fine-tune it later with `/log setup` — see [Mod Logging](/moderation/mod-logging).
+
+## 4. Turn off anything you don't need
+
+Lumière ships with everything available, but not every server needs every feature. Use:
+
+```
+/system control
+```
+
+to enable or disable specific modules and commands for your server. See [Understanding Modules](/getting-started/understanding-modules) and [Module Management](/administration/module-management) for the full picture.
+
+## 5. If something's not working
+
+Check [Troubleshooting](/troubleshooting/common-issues) for the most common setup issues — missing permissions and role position problems cover the vast majority of cases.
+
+## What's next
+
+- Setting up who can moderate and how — [Moderation](/moderation/overview)
+- Giving new members roles automatically — [Roles & Access](/roles-and-access/overview)
+- Letting members create their own voice channels — [Voice & Channels](/voice-and-channels/overview)

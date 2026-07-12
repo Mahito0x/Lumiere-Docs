@@ -1,0 +1,103 @@
+---
+title: Core Actions
+description: Ban, kick, mute, warn, and the other everyday moderation commands.
+---
+
+These are the commands you'll reach for most often. Every one of them (except `/cleanup`) requires the matching Discord permission, and every action here automatically creates a [case](/moderation/cases) you can look up later.
+
+## Ban a member
+
+```
+/ban user reason purge_days duration soft hack
+```
+
+- `user` — who to ban. You can supply a user ID even if they've left the server (a "hack-ban").
+- `reason` — shown in the audit log and the case.
+- `purge_days` — delete their messages from the last 0–7 days (default: 0).
+- `duration` — set this to auto-unban later, e.g. `1d`, `7d`, `2h`. Leave empty for a permanent ban.
+- `soft` — bans then immediately unbans, which is a fast way to clear someone's recent messages without keeping them banned.
+- `hack` — allows banning a user who isn't currently in your server.
+
+Requires **Ban Members**.
+
+## Unban a user
+
+```
+/unban user reason
+```
+
+Requires **Ban Members**.
+
+## Kick a member
+
+```
+/kick member reason
+```
+
+Requires **Kick Members**.
+
+## Mute (timeout) a member
+
+```
+/mute member duration reason
+```
+
+Uses Discord's native timeout feature — the member can't send messages, react, or speak in voice until the timeout expires. Maximum duration is 28 days (a Discord limit, not a Lumière one).
+
+Requires **Moderate Members**.
+
+## Unmute a member
+
+```
+/unmute member reason
+```
+
+Requires **Moderate Members**.
+
+## Warn a member
+
+```
+/warn member reason
+```
+
+Creates a warning and a case, but takes no automatic action beyond that. Requires **Manage Messages**.
+
+## View a user's warnings
+
+```
+/warns user
+```
+
+Requires **Manage Messages**.
+
+## Add a note to a case
+
+```
+/note case_id note
+```
+
+Attaches an internal note to an existing moderation case — useful for context that doesn't fit in the original reason. Requires **Manage Messages**.
+
+## View a user's full moderation history
+
+```
+/history user
+```
+
+Shows every case tied to that user in your server. Requires **Manage Messages**.
+
+## Slowmode
+
+```
+/slowmode seconds
+```
+
+Sets or disables slowmode on the current channel. `0` disables it; the maximum is `21600` (6 hours). Requires **Manage Channels**.
+
+## Clean up Lumière's DMs
+
+```
+/cleanup
+```
+
+Deletes all of Lumière's messages from your own DMs with the bot. No permission required — this only affects your own DM history.

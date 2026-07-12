@@ -1,0 +1,34 @@
+---
+title: Adding the Bot
+description: How to invite Lumière to your server and what permissions it needs.
+---
+
+## Invite Lumière
+
+You can invite Lumière to your server from [lumierelabs.xyz](https://lumierelabs.xyz). You'll need the **Manage Server** permission on the Discord server you're adding it to.
+
+## Permissions Lumière needs
+
+Lumière uses a wide range of Discord features — moderation, roles, voice channels, message management, and more — so it asks for a broad permission set on invite. This is normal for a bot with this many features, but here's what the major permission groups are actually used for:
+
+| Permission | Used for |
+|---|---|
+| Manage Roles | Auto-roles, temp roles, persistent roles, bulk role tools |
+| Manage Channels | Voice channels (Join-to-Create), temp channel setup |
+| Kick / Ban Members | `/kick`, `/ban`, `/unban`, and moderation cases |
+| Moderate Members | `/mute`, `/unmute` (Discord timeouts) |
+| Manage Messages | `/purge`, AutoPurge, sticky messages, strikes |
+| View Audit Log | Accurate moderation logging |
+| Send Messages / Embed Links | Every command response |
+| Manage Webhooks | Logging channels and mod-log setup |
+| Connect / Move Members (Voice) | Voice channel management commands |
+
+If you ever revoke a permission Lumière needs for a specific feature, that feature will simply fail with a clear error instead of silently breaking — see [Troubleshooting](/troubleshooting/common-issues) if that happens.
+
+## Role position matters
+
+Discord bots can only manage roles and members **below** their own role in your server's role list. After inviting Lumière, drag its role near the top of your role hierarchy — above any role you want it to assign, remove, or moderate. This is the single most common setup mistake.
+
+## Next step
+
+Once Lumière is in your server, head to [Quick Setup](/getting-started/quick-setup) to get the essentials configured.

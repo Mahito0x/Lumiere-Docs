@@ -1,0 +1,40 @@
+---
+title: Cases
+description: Every moderation action, recorded and searchable.
+---
+
+Every ban, kick, mute, warn, and strike in Lumière automatically creates a **case**. Cases are your server's permanent moderation record — searchable by user, action type, or status.
+
+## View a case
+
+```
+/case info case_id
+```
+
+Leave `case_id` empty to see your most recently created case. No special permission required to view a case's basic info, though sensitive details may be limited depending on your role.
+
+## List cases
+
+```
+/case list user action state
+```
+
+All filters are optional:
+
+- `user` — only show cases involving this member.
+- `action` — filter by type: Ban, Kick, Mute, Warn, or Strike.
+- `state` — Open or Closed.
+
+Run it with no filters to see every case in your server.
+
+## Delete a case
+
+```
+/case delete case_id all
+```
+
+Deletes a single case by ID, or set `all` to `True` to wipe **every** case in your server. This is permanent. Requires **Administrator**.
+
+## Why cases matter
+
+Cases are what powers `/history` — a member's full moderation history is just the list of every case attached to them. Keeping cases intact (rather than deleting them) gives your mod team a complete, honest record over time.

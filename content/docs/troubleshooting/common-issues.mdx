@@ -1,0 +1,33 @@
+---
+title: Common Issues
+description: Fixes for the most frequent setup problems.
+---
+
+## "Lumière can't assign/remove this role"
+
+Lumière's role sits too low in your server's role list. Discord bots can only manage roles positioned **below** their own role. Go to Server Settings → Roles and drag Lumière's role above any role you want it to assign, remove, or moderate. See [Adding the Bot](/getting-started/adding-the-bot#role-position-matters).
+
+## "I have the permission but the command still won't run"
+
+Discord permissions aren't the only layer. Your server's admins may have restricted the command directly through [`/system control`](/administration/module-management). Run `/system access` to see exactly what restrictions apply to you.
+
+## "A command is missing / not showing up"
+
+- Check whether the module or command has been disabled — `/system disabled` shows everything currently off.
+- Make sure Lumière's slash commands are synced — this can occasionally take a few minutes after the bot joins a server, or after Lumière is updated.
+
+## "Auto-roles / persistent roles aren't applying"
+
+Check your conditions first — `min_account_age` or `require_no_roles` filters in `/autorole conditions` can silently prevent assignment if a new member doesn't meet them. Use `/autorole test` to confirm what a member would actually receive before assuming something's broken.
+
+## "My backup restore didn't fully match the backup"
+
+Some Discord limitations (like exact channel ordering in edge cases) can affect a restore. Run `/backup compare` against the same backup after restoring to see if anything still differs, and re-run `/backup load` if needed.
+
+## "Counters/temp channels aren't updating"
+
+Discord limits how often a channel name can change. This is expected — counters and voice channels are designed around that limit already and will catch up shortly. Manual `/counter refresh` has a 10-minute cooldown for the same reason.
+
+## Still stuck?
+
+See the [FAQ](/troubleshooting/faq), or if the bot itself seems unresponsive, check [Bot Offline or Not Responding](/troubleshooting/bot-offline-or-not-responding).

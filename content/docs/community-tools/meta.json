@@ -1,0 +1,14 @@
+{
+  "title": "Community Tools",
+  "icon": "MessagesSquare",
+  "pages": [
+    "overview",
+    "afk-status",
+    "birthdays",
+    "sticky-messages",
+    "counters",
+    "counting-game",
+    "highlight-boards",
+    "commands"
+  ]
+}

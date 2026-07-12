@@ -1,0 +1,40 @@
+---
+title: Restoring a Backup
+description: Loading a backup safely, with comparison and progress tracking.
+---
+
+## Compare first
+
+```
+/backup compare backup_id
+```
+
+Shows exactly what's different between your server's current state and the backup — what would be added, changed, or removed if you restored it. Always run this before `/backup load`.
+
+## Restore a backup
+
+```
+/backup load backup_id
+```
+
+Restores the backup to your server. Because this can change or remove existing channels, roles, and permissions, Lumière will ask for confirmation before making any changes.
+
+<Callout type="warn">
+Restoring is not fully reversible. If you want a safety net, create a fresh backup of your *current* state with `/backup create` before restoring an older one.
+</Callout>
+
+## Check progress
+
+```
+/backup status
+```
+
+Restores on larger servers can take a little time. This shows you how far along the current restore is.
+
+## Cancel a restore
+
+```
+/backup cancel
+```
+
+Stops a restore that's currently in progress. Depending on how far along it was, your server may be left partway between its old and new state — check `/backup compare` afterward to see exactly where things stand.

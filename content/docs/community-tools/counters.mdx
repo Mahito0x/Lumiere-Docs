@@ -1,0 +1,58 @@
+---
+title: Counters
+description: Live-updating voice channel counters that display server stats in their name.
+---
+
+Counters are voice channels whose name automatically updates to show a live number — like a member count, or a custom stat you define. Members can't join these channels; they exist purely as a display.
+
+All commands are grouped under `/counter` and require **Manage Channels**.
+
+## Create a counter
+
+```
+/counter create
+```
+
+Opens a guided flow to pick what the counter tracks and how its name is formatted.
+
+## Edit a counter
+
+```
+/counter edit
+```
+
+Change what an existing counter tracks or how it's displayed.
+
+## Delete a counter
+
+```
+/counter delete counter
+```
+
+## List active counters
+
+```
+/counter list
+```
+
+## Force a refresh
+
+```
+/counter refresh
+```
+
+Manually re-syncs every counter with live data. This has a 10-minute cooldown per server since Discord limits how often a channel name can change — counters normally update on their own, so you'll rarely need this outside of testing.
+
+## Goals
+
+Counters can also track progress toward a server-wide goal (like a member count milestone), grouped under `/goal`:
+
+| Command | What it does |
+|---|---|
+| `/goal set` | Set a server-wide counter goal |
+| `/goal remove` | Remove the current goal |
+| `/goal status` | Check progress toward the current goal |
+
+<Callout type="info">
+Discord limits how frequently a channel name can be changed. Counters are designed around this limit already, so you don't need to worry about hitting it during normal use — it's only relevant if you're refreshing manually and repeatedly.
+</Callout>

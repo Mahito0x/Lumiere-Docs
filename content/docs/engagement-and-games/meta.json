@@ -1,0 +1,15 @@
+{
+  "title": "Engagement & Games",
+  "icon": "Gamepad2",
+  "pages": [
+    "overview",
+    "guess-the-number",
+    "trivia",
+    "minesweeper",
+    "tic-tac-toe",
+    "memory-game",
+    "social-interactions",
+    "fun-extras",
+    "commands"
+  ]
+}

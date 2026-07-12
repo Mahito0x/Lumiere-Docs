@@ -1,0 +1,36 @@
+---
+title: Understanding Modules
+description: How Lumière's features are organized and how per-server control works.
+---
+
+Lumière is built from separate feature modules — moderation, roles, voice, community tools, games, stats, and backups. Every module is available to every server by default, but each server can turn modules and individual commands on or off independently.
+
+## Why this matters
+
+You don't have to use everything Lumière offers. If your server doesn't need the counting game, or you'd rather use a different backup workflow, you can disable just that piece without affecting anything else.
+
+## Controlling modules
+
+Server admins manage this through:
+
+```
+/system control
+```
+
+From here you can:
+
+- Enable or disable an entire module (for example, turning off Engagement & Games)
+- Enable or disable a single command
+- Whitelist or blacklist specific roles or users from a command
+- Reset any command back to its default settings with `/system reset`
+
+## Checking what's active
+
+- `/system disabled` — see everything currently turned off in your server
+- `/system access` — check what restrictions apply to *you* specifically
+
+This is covered in full detail in [Module Management](/administration/module-management).
+
+## A note on permissions vs modules
+
+Turning a module off is different from Discord permissions. Even with a module enabled, Discord's own permission system still applies — a member without **Manage Roles**, for example, still can't run role-management commands, whether or not the module itself is enabled.

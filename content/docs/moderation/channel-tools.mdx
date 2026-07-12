@@ -1,0 +1,28 @@
+---
+title: Channel Tools
+description: /say and /nuke — two direct channel-management commands.
+---
+
+## Send a message as Lumière
+
+```
+/say message channel attachment
+```
+
+Sends a message through Lumière into any channel you choose (defaults to the current channel if you don't specify one). You can attach a file too. Requires **Administrator**.
+
+This is useful for official announcements you want to come from the bot rather than a personal account, or for posting formatted content a regular message wouldn't support as cleanly.
+
+## Nuke a channel
+
+```
+/nuke
+```
+
+Clones the current channel — same name, position, permissions, and settings — deletes the original, and puts the clone in its place. The end result looks identical, but every message in it is gone.
+
+This is the fastest way to fully clear a channel's history when a targeted `/purge` isn't enough (Discord doesn't allow bulk-deleting messages older than 14 days, so nuking is the workaround for very old message backlogs). Requires **Manage Channels**.
+
+<Callout type="warn">
+`/nuke` is irreversible. Every message, thread, and pinned item in the channel is permanently gone once it runs. There's no dry-run or preview mode for this one — double check you're in the right channel before running it.
+</Callout>

@@ -1,0 +1,10 @@
+{
+  "title": "Voice & Channels",
+  "icon": "Mic",
+  "pages": [
+    "overview",
+    "join-to-create-setup",
+    "managing-your-channel",
+    "commands"
+  ]
+}

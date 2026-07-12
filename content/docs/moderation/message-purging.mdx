@@ -1,0 +1,61 @@
+---
+title: Message Purging
+description: /purge — precise, filterable bulk message deletion.
+---
+
+`/purge` deletes messages in bulk, with filters so you can target exactly what you want instead of wiping an entire channel.
+
+```
+/purge amount target role type input logic preview transcript
+```
+
+Requires **Manage Messages**.
+
+## Options
+
+- `amount` — how many messages to delete, from 2 up to 500.
+- `target` — only delete messages from a specific user.
+- `role` — only delete messages from members who have a specific role.
+- `type` — what kind of messages to target (see the full filter list below).
+- `input` — for filters that need extra detail: message IDs for position-based filters, or text/regex for content filters.
+- `logic` — **Match** deletes what fits the filter; **Inverse** deletes everything *except* what fits the filter.
+- `preview` — run a dry run first to see what would be deleted, without actually deleting anything.
+- `transcript` — attach a `.txt` log of every deleted message to the result, useful for keeping a record.
+
+## Available filters (`type`)
+
+| Filter | Deletes |
+|---|---|
+| Bot Messages | Messages sent by bots |
+| User Messages | Messages sent by real users |
+| Webhook Messages | Messages sent via webhooks |
+| Text Only | Messages with no attachments or embeds |
+| Media Only | Messages with attachments or embeds |
+| Embeds | Messages containing embeds |
+| Attachments | Messages with file attachments |
+| Links | Messages containing links |
+| Discord Invites | Messages containing Discord invite links |
+| Mentions | Messages that mention someone |
+| Has Reactions | Messages with reactions on them |
+| Emoji | Messages containing emoji |
+| No Roles | Messages from members with no roles |
+| No Avatar | Messages from members with a default (no custom) avatar |
+| Inactive / Left Server | Messages from users no longer in the server |
+| Deleted Discord Accounts | Messages from since-deleted Discord accounts |
+| Zalgo / Glitch Text | Messages with corrupted/glitch-style text |
+| Clear Reactions | Removes reactions without deleting the message |
+| Before Message ID | Everything before a given message ID |
+| After Message ID | Everything after a given message ID |
+| Between Two IDs | Everything between two message IDs (`ID1-ID2`) |
+| Contains Text | Messages containing specific text |
+| Matches Exactly | Messages that exactly match given text |
+| Starts With | Messages starting with given text |
+| Regex Pattern | Messages matching a regex pattern |
+
+## A good habit: use preview first
+
+Set `preview: True` before running a large or filter-heavy purge. Lumière will show you what it *would* delete without touching anything, so you can double-check before committing.
+
+## Related
+
+For scheduled, recurring cleanup instead of a one-time purge, see [Auto-Purge](/moderation/auto-purge).

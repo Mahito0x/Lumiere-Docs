@@ -1,0 +1,28 @@
+---
+title: Permissions & Access
+description: How Lumière decides who can run which command.
+---
+
+A command can fail to run for a member for one of three separate reasons. Knowing which one applies makes troubleshooting much faster.
+
+## 1. Discord permissions
+
+Many commands require a real Discord permission — **Ban Members** for `/ban`, **Manage Roles** for role commands, and so on. This is enforced by Discord itself, not Lumière, and shows up throughout this documentation as a "Permission" note on each command.
+
+## 2. Lumière's role hierarchy
+
+For anything involving roles, Lumière can only manage roles positioned **below** its own role. If Lumière's role isn't high enough in your server's role list, role commands will fail even for an admin with full Discord permissions. See [Adding the Bot](/getting-started/adding-the-bot#role-position-matters).
+
+## 3. Server-level restrictions
+
+On top of Discord's own permission system, your server's admins can independently restrict any command using [`/system control`](/administration/module-management) — disabling it entirely, or whitelisting/blacklisting specific roles or users. This applies even if you have every relevant Discord permission.
+
+## Checking your own access
+
+If a command isn't working and you're not sure why:
+
+```
+/system access
+```
+
+shows exactly what server-level restrictions apply to you. If that comes back clear, the issue is more likely a Discord permission or Lumière's role position — see [Troubleshooting](/troubleshooting/common-issues).

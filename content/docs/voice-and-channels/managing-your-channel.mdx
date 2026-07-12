@@ -1,0 +1,55 @@
+---
+title: Managing Your Channel
+description: Everything you can do once you own a temporary voice channel.
+---
+
+Once you've joined a Join-to-Create channel and gotten your own voice channel, all of these commands are grouped under `/voice`. You need to be the current owner of the channel to use most of them.
+
+## Basics
+
+| Command | What it does |
+|---|---|
+| `/voice rename name` | Rename your channel |
+| `/voice limit limit` | Set a user limit (`0` = unlimited) |
+| `/voice bitrate bitrate` | Set audio bitrate (8–384 kbps, depending on your server's boost level) |
+| `/voice nsfw` | Toggle NSFW status |
+| `/voice region region` | Set a specific voice region, or Automatic |
+| `/voice status status` | Set a status message shown on your channel |
+| `/voice game` | Auto-rename your channel based on what you're currently playing |
+
+## Privacy & access
+
+| Command | What it does |
+|---|---|
+| `/voice lock` | Lock the channel so others can't join without permission |
+| `/voice unlock` | Unlock it again |
+| `/voice ghost` | Hide the channel from the channel list |
+| `/voice unghost` | Make it visible again |
+| `/voice permit` | Allow specific users or roles into your locked channel |
+| `/voice reject` | Revoke access and kick specific users or roles out |
+| `/voice invite user` | Ping a user to invite them into your channel |
+
+## Requesting access
+
+If a channel is locked and you're not on the permit list, you can ask to join:
+
+```
+/voice request channel
+```
+
+This sends a request to the channel owner rather than letting you in automatically.
+
+## Ownership
+
+| Command | What it does |
+|---|---|
+| `/voice claim` | Claim an abandoned channel (its original owner has left) |
+| `/voice transfer user` | Hand ownership over to someone else in the channel |
+
+## If your control panel disappears
+
+```
+/voice panel
+```
+
+Resends the interactive control panel to your channel, in case it got scrolled away or accidentally dismissed.

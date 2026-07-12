@@ -1,0 +1,26 @@
+---
+title: Templates
+description: Publish a backup as a public template, or apply someone else's.
+---
+
+Any backup can be published as a public template — a reusable starting point other servers can apply to set themselves up quickly, without exposing your original server's live data.
+
+## Publish or unpublish a backup
+
+```
+/backup publish backup_id
+```
+
+Toggles whether a backup is publicly visible as a template. Running it again on the same backup unpublishes it.
+
+## Browse or apply templates
+
+```
+/backup template backup_id
+```
+
+Leave `backup_id` empty to browse available public templates. Provide a template's ID to apply it directly to your server, the same way you'd load any other backup.
+
+<Callout type="info">
+Applying a template works exactly like restoring a backup — it will change your server's channels, roles, and structure to match. Run `/backup compare` against the template ID first if you want to see what would change before committing.
+</Callout>

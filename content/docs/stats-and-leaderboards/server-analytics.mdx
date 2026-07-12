@@ -1,0 +1,32 @@
+---
+title: Server Analytics
+description: Channel and server-wide activity tools for admins.
+---
+
+## Channel statistics
+
+```
+/stats channel channel
+```
+
+Shows activity for a specific channel — how much it's being used and by whom.
+
+## Server-wide analytics
+
+```
+/stats server
+```
+
+An overall view of activity across your whole server.
+
+## Activity heatmap
+
+```
+/stats heatmap period
+```
+
+Visualizes when your server is most active — by hour and day of the week. `period` can be Last 7 Days, Last 30 Days, or All Time. Useful for figuring out the best time to schedule events or announcements.
+
+## Managing exclusions
+
+Admins can manage which channels or roles are excluded from server-wide stats through the same `/stats ignore` command members use for their own data — the scope depends on your permission level when running it.

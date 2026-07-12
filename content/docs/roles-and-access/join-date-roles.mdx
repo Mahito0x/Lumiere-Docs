@@ -1,0 +1,33 @@
+---
+title: Join-Date Roles
+description: Assign or remove roles based on when members joined your server.
+---
+
+Join-date roles let you target members by *when* they joined, rather than by anything else about them. This is useful for retroactively rewarding early members, or applying a role to a specific cohort — like "everyone who joined during our launch week."
+
+All commands are grouped under `/joinrange` and require **Manage Roles**.
+
+## Assign to a date range
+
+```
+/joinrange assign role start end bots
+```
+
+- `start` / `end` — dates in `YYYY-MM-DD` format, both inclusive.
+- `bots` — whether to include bot accounts (default: off).
+
+## Remove from a date range
+
+```
+/joinrange remove role start end bots
+```
+
+Same options as assign, but removes the role instead.
+
+## Preview before you commit
+
+```
+/joinrange preview role start end action bots
+```
+
+Shows who would be affected by an assign or remove for the given date range, without making any changes. As with [bulk role management](/roles-and-access/bulk-role-management), it's worth running this first on any range that might catch more members than you expect.

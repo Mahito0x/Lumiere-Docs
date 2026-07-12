@@ -1,0 +1,75 @@
+---
+title: Auto-Roles on Join
+description: Automatically assign roles when new members join.
+---
+
+Auto-roles give every new member (or bot, depending on your setup) a role automatically the moment they join — no manual assignment needed. All commands here are grouped under `/autorole` and require **Manage Roles**.
+
+## Set up auto-roles
+
+```
+/autorole set
+```
+
+Opens a configuration flow to choose which role(s) get assigned automatically on join.
+
+## Add anti-raid protection
+
+```
+/autorole delay seconds
+```
+
+Sets a delay (0–300 seconds) before the role is assigned. A short delay is a simple anti-raid measure — it gives your moderation tools a moment to catch obviously malicious accounts before they get roles.
+
+## Set assignment conditions
+
+```
+/autorole conditions min_account_age require_no_roles
+```
+
+- `min_account_age` — only assign the role if the Discord account is at least this many days old. Set to `0` to disable this check. Useful for filtering out brand-new throwaway accounts.
+- `require_no_roles` — only assign if the member currently has no roles at all (helps avoid double-assigning if another system already gave them one).
+
+## Filter who's included
+
+```
+/autorole filter
+```
+
+Manage which members are ignored or included by auto-roles — for example, excluding bots from a role meant only for humans.
+
+## Turn features on/off
+
+```
+/autorole toggle
+```
+
+Turns join assignment and/or role syncing on or off without losing your configuration.
+
+## Test your configuration
+
+```
+/autorole test member
+```
+
+Shows what roles *would* be assigned to a member without actually assigning anything — useful for confirming your setup works before it goes live. Leave `member` empty to test against yourself.
+
+## View current configuration
+
+```
+/autorole config
+```
+
+Shows an overview of your active auto-role settings and filters.
+
+## Remove auto-roles
+
+```
+/autorole delete
+```
+
+Removes specific auto-roles from your configuration.
+
+## Related
+
+If you want roles that also survive a member leaving and rejoining, pair this with [Persistent Roles](/roles-and-access/persistent-roles).

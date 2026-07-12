@@ -1,0 +1,9 @@
+{
+  "title": "Troubleshooting",
+  "icon": "LifeBuoy",
+  "pages": [
+    "common-issues",
+    "bot-offline-or-not-responding",
+    "faq"
+  ]
+}

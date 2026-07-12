@@ -1,0 +1,23 @@
+{
+  "title": "Lumière Docs",
+  "pages": [
+    "index",
+    "---Get Started---",
+    "getting-started",
+    "free-vs-plus",
+    "---Moderation & Access---",
+    "moderation",
+    "roles-and-access",
+    "---Community---",
+    "voice-and-channels",
+    "community-tools",
+    "engagement-and-games",
+    "stats-and-leaderboards",
+    "---Server Management---",
+    "server-backups",
+    "administration",
+    "---Help---",
+    "reference",
+    "troubleshooting"
+  ]
+}

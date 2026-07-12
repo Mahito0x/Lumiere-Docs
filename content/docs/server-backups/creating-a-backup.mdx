@@ -1,0 +1,18 @@
+---
+title: Creating a Backup
+description: The guided backup flow, with optional encryption.
+---
+
+```
+/backup create passphrase
+```
+
+Starts a guided, 4-step flow that walks you through exactly what gets included in the backup before it's created — you're not just blindly snapshotting everything with no visibility into it.
+
+## Optional: encrypt on creation
+
+Set `passphrase` to encrypt the backup with AES-256-GCM as it's created. If you set this, **write the passphrase down somewhere safe** — Lumière does not store it, and there is no recovery option if you lose it. See [Encrypted Backups](/server-backups/encrypted-backups) for more detail.
+
+## After creation
+
+Once your backup is created, it's assigned a backup ID you'll use for every other backup command — restoring, renaming, exporting, and so on. Find it any time with [`/backup list`](/server-backups/managing-backups#list-your-backups).
